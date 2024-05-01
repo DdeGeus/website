@@ -291,7 +291,7 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [de Geus]
+  last_name: [{de Geus}]
   first_name: [daan]
 
   style: ieee
