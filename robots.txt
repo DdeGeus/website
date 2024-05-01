@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://ddegeus.github.io/al-folio/sitemap.xml
+Sitemap: https://ddegeus.github.io/sitemap.xml
