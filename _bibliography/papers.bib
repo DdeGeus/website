@@ -11,7 +11,7 @@
   year={2024},
   pdf={https://tue-mps.github.io/tapps/resources/tapps_paper.pdf},
   project_page={https://tue-mps.github.io/tapps/},
-  selected={true}
+  selected={true},
 }
 
 
@@ -23,7 +23,35 @@
   abstract={This work presents Adaptive Local-then-Global Merging (ALGM), a token reduction method for semantic segmentation networks that use plain Vision Transformers. ALGM merges tokens in two stages: (1) In the first network layer, it merges similar tokens within a small local window and (2) halfway through the network, it merges similar tokens across the entire image. This is motivated by an analysis in which we found that, in those situations, tokens with a high cosine similarity can likely be merged without a drop in segmentation quality. With extensive experiments across multiple datasets and network configurations, we show that ALGM not only significantly improves the throughput by up to 100\%, but can also enhance the mean IoU by up to +1.1, thereby achieving a better trade-off between segmentation quality and efficiency than existing methods. Moreover, our approach is adaptive during inference, meaning that the same model can be used for optimal efficiency or accuracy, depending on the application.},
   booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2024},
-  pdf={https://github.com/tue-mps/ALGM/blob/gh_pages/paper/ALGM__Adaptive_Local_Global_Token_Merging_for_Efficient_Semantic_Segmentation_in_Vision_Transformers_CVPR2024.pdf},
+  pdf={https://tue-mps.github.io/ALGM/paper/ALGM__Adaptive_Local_Global_Token_Merging_for_Efficient_Semantic_Segmentation_in_Vision_Transformers_CVPR2024.pdf},
   project_page={https://tue-mps.github.io/ALGM/},
-  selected={true}
+  selected={true},
+}
+
+@inproceedings{lu2023cts,
+  abbr={CVPR},
+  bibtex_show={true},
+  abstract={This paper introduces Content-aware Token Sharing (CTS), a token reduction approach that improves the computational efficiency of semantic segmentation networks that use Vision Transformers (ViTs). Existing works have proposed token reduction approaches to improve the efficiency of ViT-based image classification networks, but these methods are not directly applicable to semantic segmentation, which we address in this work. We observe that, for semantic segmentation, multiple image patches can share a token if they contain the same semantic class, as they contain redundant information. Our approach leverages this by employing an efficient, class-agnostic policy network that predicts if image patches contain the same semantic class, and lets them share a token if they do. With experiments, we explore the critical design choices of CTS and show its effectiveness on the ADE20K, Pascal Context and Cityscapes datasets, various ViT backbones, and different segmentation decoders. With Content-aware Token Sharing, we are able to reduce the number of processed tokens by up to 44%, without diminishing the segmentation quality.},
+  title={{Content-aware Token Sharing for Efficient Semantic Segmentation with Vision Transformers}},
+  author={Lu, Chenyang and {de Geus}, Daan and Dubbelman, Gijs},
+  booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2023},
+  pdf={https://openaccess.thecvf.com/content/CVPR2023/papers/Lu_Content-Aware_Token_Sharing_for_Efficient_Semantic_Segmentation_With_Vision_Transformers_CVPR_2023_paper.pdf},
+  arxiv={https://arxiv.org/abs/2306.02095},
+  project_page={https://tue-mps.github.io/CTS/},
+  selected={true},
+}
+
+@inproceedings{degeus2023ibs,
+  abbr={WACV},
+  bibtex_show={true},
+  abstract={Unified panoptic segmentation methods are achieving state-of-the-art results on several datasets. To achieve these results on large-resolution datasets, these methods apply crop-based training. In this work, we find that, although crop-based training is advantageous in general, it also has a harmful side-effect. Specifically, it limits the ability of unified networks to discriminate between large object instances, causing them to make predictions that are confused between multiple instances. To solve this, we propose Intra-Batch Supervision (IBS), which improves a network's ability to discriminate between instances by introducing additional supervision using multiple images from the same batch. We show that, with our IBS, we successfully address the confusion problem and consistently improve the performance of unified networks. For the high-resolution Cityscapes and Mapillary Vistas datasets, we achieve improvements of up to +2.5 on the Panoptic Quality for thing classes, and even more considerable gains of up to +5.8 on both the pixel accuracy and pixel precision, which we identify as better metrics to capture the confusion problem.},
+  title={{Intra-Batch Supervision for Panoptic Segmentation on High-Resolution Images}},
+  author={{de Geus}, Daan and Dubbelman, Gijs},
+  booktitle={IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  year={2023},
+  pdf={https://openaccess.thecvf.com/content/WACV2023/papers/de_Geus_Intra-Batch_Supervision_for_Panoptic_Segmentation_on_High-Resolution_Images_WACV_2023_paper.pdf},
+  arxiv={https://arxiv.org/abs/2304.08222},
+  project_page={https://ddegeus.github.io/intra-batch-supervision/},
+  selected={false},
 }
