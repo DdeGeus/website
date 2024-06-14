@@ -9,7 +9,7 @@
   abstract={Part-aware panoptic segmentation (PPS) requires (a) that each foreground object and background region in an image is segmented and classified, and (b) that all parts within foreground objects are segmented, classified and linked to their parent object. Existing methods approach PPS by separately conducting object-level and part-level segmentation. However, their part-level predictions are not linked to individual parent objects. Therefore, their learning objective is not aligned with the PPS task objective, which harms the PPS performance. To solve this, and make more accurate PPS predictions, we propose Task-Aligned Part-aware Panoptic Segmentation (TAPPS). This method uses a set of shared queries to jointly predict (a) object-level segments, and (b) the part-level segments within those same objects. As a result, TAPPS learns to predict part-level segments that are linked to individual parent objects, aligning the learning objective with the task objective, and allowing TAPPS to leverage joint object-part representations. With experiments, we show that TAPPS considerably outperforms methods that predict objects and parts separately, and achieves new state-of-the-art PPS results.},
   booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2024},
-  pdf={https://tue-mps.github.io/tapps/resources/tapps_paper.pdf},
+  pdf={https://openaccess.thecvf.com/content/CVPR2024/papers/de_Geus_Task-aligned_Part-aware_Panoptic_Segmentation_through_Joint_Object-Part_Representations_CVPR_2024_paper.pdf},
   project_page={https://tue-mps.github.io/tapps/},
   selected={true},
 }
@@ -23,7 +23,7 @@
   abstract={This work presents Adaptive Local-then-Global Merging (ALGM), a token reduction method for semantic segmentation networks that use plain Vision Transformers. ALGM merges tokens in two stages: (1) In the first network layer, it merges similar tokens within a small local window and (2) halfway through the network, it merges similar tokens across the entire image. This is motivated by an analysis in which we found that, in those situations, tokens with a high cosine similarity can likely be merged without a drop in segmentation quality. With extensive experiments across multiple datasets and network configurations, we show that ALGM not only significantly improves the throughput by up to 100\%, but can also enhance the mean IoU by up to +1.1, thereby achieving a better trade-off between segmentation quality and efficiency than existing methods. Moreover, our approach is adaptive during inference, meaning that the same model can be used for optimal efficiency or accuracy, depending on the application.},
   booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2024},
-  pdf={https://tue-mps.github.io/ALGM/paper/ALGM__Adaptive_Local_Global_Token_Merging_for_Efficient_Semantic_Segmentation_in_Vision_Transformers_CVPR2024.pdf},
+  pdf={https://openaccess.thecvf.com/content/CVPR2024/papers/Norouzi_ALGM_Adaptive_Local-then-Global_Token_Merging_for_Efficient_Semantic_Segmentation_with_CVPR_2024_paper.pdf},
   project_page={https://tue-mps.github.io/ALGM/},
   selected={true},
 }
@@ -155,6 +155,7 @@
   booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
   year={2024},
   arxiv={2404.12172},
+  pdf={https://openaccess.thecvf.com/content/CVPR2024W/2WFM/papers/Kerssies_How_to_Benchmark_Vision_Foundation_Models_for_Semantic_Segmentation_CVPRW_2024_paper.pdf},
   project_page={https://tue-mps.github.io/benchmark-vfm-ss/},
   selected={false},
 }
@@ -167,6 +168,7 @@
   abstract={Achieving robust generalization across diverse data domains remains a significant challenge in computer vision. This challenge is important in safety-critical applications, where deep-neural-network-based systems must perform reliably under various environmental conditions not seen during training. Our study investigates whether the generalization capabilities of Vision Foundation Models (VFMs) and Unsupervised Domain Adaptation (UDA) methods for the semantic segmentation task are complementary. Results show that combining VFMs with UDA has two main benefits: (a) it allows for better UDA performance while maintaining the out-of-distribution performance of VFMs, and (b) it makes certain time-consuming UDA components redundant, thus enabling significant inference speedups. Specifically, with equivalent model sizes, the resulting VFM-UDA method achieves an 8.4$\times$ speed increase over the prior non-VFM state of the art, while also improving performance by +1.2 mIoU in the UDA setting and by +6.1 mIoU in terms of out-of-distribution generalization. Moreover, when we use a VFM with 3.6$\times$ more parameters, the VFM-UDA approach maintains a 3.3$\times$ speed up, while improving the UDA performance by +3.1 mIoU and the out-of-distribution performance by +10.3 mIoU. These results underscore the significant benefits of combining VFMs with UDA, setting new standards and baselines for Unsupervised Domain Adaptation in semantic segmentation. The implementation is available at https://github.com/tue-mps/vfm-uda.},
   booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
   year={2024},
+  pdf={https://openaccess.thecvf.com/content/CVPR2024W/2WFM/papers/Englert_Exploring_the_Benefits_of_Vision_Foundation_Models_for_Unsupervised_Domain_CVPRW_2024_paper.pdf},
   code={https://github.com/tue-mps/vfm-uda},
   selected={false},
 }
